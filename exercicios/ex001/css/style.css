@@ -1,0 +1,15 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    position: relative;
+    left: 250pt; 
+    motion: 50pt;
+}
+
+img{
+    transform: none;
+    background-color: aqua;
+    position: relative;
+    left: 30pt;
+    nav-up: root;
+}

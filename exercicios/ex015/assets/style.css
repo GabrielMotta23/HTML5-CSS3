@@ -1,0 +1,54 @@
+body{
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #0077b6, #00b4d8);
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 7px 5px 10px rgb(0, 68, 88);
+    text-align: justify;
+}
+
+h1{
+    background-color: #00b4d8;
+    color: white;
+    text-shadow: 1px 3px 5px black;
+    margin: auto;
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 6px 10px rgb(92, 92, 92);
+    font: italic bolder 30px arial;
+}
+
+p{
+    text-align: justify;
+    padding: 10px;
+    font: normal lighter 16px arial; 
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    box-shadow: 7px 5px 10px rgb(0, 68, 88);
+    border-radius: 20px;
+    cursor: pointer;
+}
