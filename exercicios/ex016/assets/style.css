@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../img/sergei-a--heLWtuAN3c-unsplash.jpg');
+    background-attachment: fixed;
+}
+
+main{
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+
