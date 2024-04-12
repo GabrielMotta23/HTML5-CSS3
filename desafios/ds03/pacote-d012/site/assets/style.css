@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Tilt+Neon:XROT@45&display=swap');
+
+:root {
+    --font1: "Seymour One", sans-serif;
+    --font2: "Tilt Neon", sans-serif;;
+}
+
+body{
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+header{
+    background-color: rgb(16, 159, 255);
+    text-align: center;
+    color: white;
+}
+
+header > h1{
+    padding-top: 30px;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 30px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: cursive;
+    font-size: 3.5vw;
+}
+
+section.normal{
+    background-color: white;
+}
+
+section.imagem{
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    background-color: rgba(141, 141, 141, 0.082);
+    display: inline-block;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+}
