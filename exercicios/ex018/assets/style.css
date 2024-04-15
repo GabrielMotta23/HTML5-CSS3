@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../img/bugatti.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@import url('../fonts/BebasNeue-Regular.otf');
+
+@font-face {
+    font-family: 'bebas neue';
+    src: url(../fonts/BebasNeue-Regular.otf) format('openntype');
+    font-weight: normal;
+}
+
+:root{
+    --font-principal: 'bebas neue', arial;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a:hover{
+    color: rgb(0, 89, 255);
+    transition-duration: 0.5s;
+}
+
+.menu{
+    text-align: center;
+    color: white;
+    width: 800px;
+    margin: auto;
+    padding-top: 100px;
+    text-shadow: 0px 0px 10px black;
+}
+
+div.menu > h1{
+    font-family: var(--font-principal);
+    color: white;
+    font-size: 100px;
+    cursor: default;
+}
+
+div.menu > p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    cursor: default;
+}
+
+.logo > img{
+    width: 400px;
+    height: 200px;
+    text-shadow: 0px 0px 10px black;
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.logo > p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    cursor: default;
+    color: white;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    text-shadow: 0px 0px 10px black;
+    padding-top: 60px;
+}
+
+.car > img{
+    width: 400px;
+    display: flex;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.car > p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    cursor: default;
+    color: white;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    text-shadow: 0px 0px 10px black;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
