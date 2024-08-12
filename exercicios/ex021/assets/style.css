@@ -11,6 +11,9 @@ body{
     justify-content: space-evenly;
     padding: 10px;
     margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
 }
 
 .menu > a{
