@@ -11,11 +11,8 @@ html, body {
 }
 
 body{
-    background-image: url('../pacote-d013/pacote-d013/imagens/fundo-madeira.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
+    background: url('../pacote-d013/pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
 }
-
 main{
     position: relative;
     height: 100vh;
