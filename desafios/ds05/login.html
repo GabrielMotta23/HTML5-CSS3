@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Barbearia</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #373435;
+        }
+        form{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate( -50%, -50%);
+        }
+        
+        h1{
+            position: absolute;
+            left: 50%;
+            top: 28%;
+            transform: translate( -50%, -50%);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input{
+            text-decoration: none;
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            border-left: 1px solid white;
+            
+        }
+
+        .sub{
+            border: none;
+            margin-top: 20px;
+        }
+
+        .sub:hover{
+            color: #d2ae6d;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <h1>Login</h1>
+        <div class="login2">
+            <form action="pagi.html" method="post">
+                <div class="user">
+                    <p>
+                        <input type="text" id="user" placeholder="usuario">
+                    </p>
+                    <p>
+                        <input type="password" id="sen" placeholder="senha">
+                    </p>
+                </div>
+                <p>
+                    <input type="submit" id="submit" class="sub">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
