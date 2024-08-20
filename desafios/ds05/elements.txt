@@ -1,0 +1,6 @@
+cores:
+
+#373435
+#d2ae6d
+#fffff
+

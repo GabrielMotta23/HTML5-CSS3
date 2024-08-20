@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --corfundo:#373435;
+    --cor2:#d2ae6d;
+    --cor3:#ffffff;
+
+    font-family: Roboot;
+}
+
+nav.home{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    background-color: #373435;
+}
+
+div.logo{
+    background: url('../imagens/Vinilos\ decorativos\ Peluquerías\ y\ Barberías\ \(1\).jpeg') center;
+    width: 100px;
+    height: 80px;
+    margin-left: 120px;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+}
+
+nav  ul  a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 6px;
+}
+
+nav p{
+    margin-right: 120px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--cor3);
+    border: #d2ae6d solid 2px;
+    padding: 10px 20px 10px 20px;
+}
+
+nav ul a:hover{
+    border-bottom: #d2ae6d 2px solid;
+    padding-bottom: 5px;
+    color: var(--cor2);
+}
+
+nav p:hover{
+    background-color: var(--cor2);
+    color: #373435;
+    border-radius: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+div.about{
+    background: url('../imagens/sinval-carvalho-WbEibGKHBMY-unsplash.jpg');
+    height: 200px;
+    color: var(--cor3);
+}
+
+div.about h1{
+    text-align: center;
+    padding-top: 55px;
+    margin-left: 40px;
+}
+
+div.about ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 11px;
+}
+
+div.about li{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+div.about a{
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
