@@ -1,14 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "roboto", sans-serif;
 }
 
 :root{
     --corfundo:#373435;
     --cor2:#d2ae6d;
     --cor3:#ffffff;
+    --cor4:#1a1a1a;
 
-    font-family: Roboot;
 }
 
 nav.home{
@@ -16,14 +17,16 @@ nav.home{
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    background-color: #373435;
+    background-color: #1a1a1a;
 }
 
 div.logo{
-    background: url('../imagens/Vinilos\ decorativos\ Peluquerías\ y\ Barberías\ \(1\).jpeg') center;
+    background: url('../imagens/logo.jpg') center;
+    background-size: cover;
     width: 100px;
     height: 80px;
     margin-left: 120px;
+    border-radius: 50%;
 }
 
 nav > ul{
@@ -51,7 +54,6 @@ nav p{
 
 nav ul a:hover{
     border-bottom: #d2ae6d 2px solid;
-    padding-bottom: 5px;
     color: var(--cor2);
 }
 
@@ -59,12 +61,13 @@ nav p:hover{
     background-color: var(--cor2);
     color: #373435;
     border-radius: 3px;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 }
 
 div.about{
-    background: url('../imagens/sinval-carvalho-WbEibGKHBMY-unsplash.jpg');
+    background: url('../imagens/2149205855.jpg') center no-repeat;
+    background-size: cover;
     height: 200px;
     color: var(--cor3);
 }
@@ -73,6 +76,7 @@ div.about h1{
     text-align: center;
     padding-top: 55px;
     margin-left: 40px;
+    text-shadow: 0px 0px 5px black;
 }
 
 div.about ul{
@@ -89,9 +93,161 @@ div.about li{
 
 div.about a{
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--cor3);
+    text-shadow: 0px 0px 5px black;
+    font-weight: 600;
     text-decoration: none;
 }
+
+div.welcome{
+    background: url('../imagens/plano-de-fundo-texturizado-de-concreto-grunge-preto.jpg') center center;
+    padding: 50px;
+    height: 300px;
+}
+
+div.welcome h1{
+    color: var(--cor2);
+    text-align: center;
+    padding-top: 85px;
+    border-bottom: #d2ae6d solid;
+}
+
+div.welcome p{
+    color: var(--cor3);
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    width: 700px;
+}
+
+#text-welcome{
+    margin-top: 30px;
+}
+
+#testmonials{
+    background-color: var(--cor4);
+    height: 540px;
+    display: flex;
+    color: var(--cor3);
+}
+
+#client1{
+    background: url('../imagens/barbeiro1.webp') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 540px;
+}
+
+.testmonials-text{
+    position: relative;
+    margin-left: 120px;
+    margin-top: 10%;
+}
+
+.testmonials-text h1{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: #d2ae6d solid;
+}
+
+.testmonials-text p{
+    margin-bottom: 10px;
+    margin-right: 250px;
+    font-style: italic;
+    font-weight: 300;
+    width: 300px;
+}
+
+.testmonials-text h2{
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#charles-name{
+    color: #d2ae6d;
+    font-style: italic;
+    font-weight: 300;
+}
+
+#ourservice{
+    background: url('../imagens/plano-de-fundo-texturizado-de-concreto-grunge-preto.jpg');
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+#ourservice  h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #d2ae6d;
+}
+
+#ourservice  p{
+    font-style: italic;
+
+}
+
+#ourservice img{
+    width: 200px;
+    height: 200px;
+}
+
+#ourservice1{
+    background-color: var(--cor4);
+    color: var(--cor3);
+    width: 200px;
+    height: 420px;
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 100px;
+}
+
+#ourservice1-text{
+    padding: 20px;
+}
+
+#ourservice1-text h1{
+    margin-bottom: 10px;
+}
+
+#ourservice2{
+    background-color: var(--cor4);
+    color: var(--cor3);
+    width: 200px;
+    height: 420px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+#ourservice2-text{
+    padding: 20px;
+}
+
+#ourservice2-text h1{
+    margin-bottom: 10px;
+}
+
+#ourservice3{
+    background-color: var(--cor4);
+    color: var(--cor3);
+    width: 200px;
+    height: 420px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+#ourservice3-text{
+    padding: 20px;
+}
+
+#ourservice3-text h1{
+    margin-bottom: 10px;
+}
+
 
 
 
