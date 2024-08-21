@@ -7,9 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="shortcut icon" href="imagens/barbeiro.png" type="image/x-icon">
+    <title>barber</title>
+    <script>
+        function mostrarValores () {
+            let idade = 18;
+            let altura = 1.80;
+            let inicial = 'G';
+            let nome = "Gabriel";
+            let aprovado =  true;
+
+            console.log ("Idade", idade); 
+            console.log ("Altura", altura);
+            console.log ("Inicial", inicial);
+            console.log ("Nome", nome);
+            console.log ("Aprovado", aprovado);
+        }
+
+        function mostrarProduto (){
+            let nomeProduto = "Corte";
+            let preco = 50.00;
+            let quantidade = 1;
+            let disponivel = true;
+
+            console.log ("Nome do produto", nomeProduto); 
+            console.log ("Preco", preco);
+            console.log ("Quantidade em estoque", quantidade);
+            console.log ("Disponivel", disponivel);
+        }
+    </script>
 </head>
-<body>
+<body onload="mostrarValores(); mostrarProduto()";>
     <nav class="home">
         <div class="logo"></div>
             <ul>

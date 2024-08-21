@@ -15,7 +15,7 @@
 nav.home{
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 120px;
     align-items: center;
     background-color: #1a1a1a;
 }
@@ -41,6 +41,7 @@ nav  ul  a{
     text-transform: uppercase;
     font-size: 11px;
     padding: 6px;
+    border-bottom: #373435 solid;
 }
 
 nav p{
@@ -55,6 +56,7 @@ nav p{
 nav ul a:hover{
     border-bottom: #d2ae6d 2px solid;
     color: var(--cor2);
+    transition: 0.5s;
 }
 
 nav p:hover{
