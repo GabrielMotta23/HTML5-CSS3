@@ -13,40 +13,72 @@
         body{
             background-color: #373435;
         }
-        form{
+
+        #login{
+            background-color: rgba(137, 43, 226, 0.096);
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate( -50%, -50%);
-        }
-        
-        h1{
-            position: absolute;
-            left: 50%;
-            top: 28%;
-            transform: translate( -50%, -50%);
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
+            transform: translate(-50%, -50%);
+            border: solid white 2px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px black;
+            width: 250px;
+            height: 300px;
         }
 
-        input{
-            text-decoration: none;
-            padding: 10px;
-            background-color: transparent;
-            border: none;
+        #login h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
             color: white;
-            border-left: 1px solid white;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            text-shadow: 0px 0px 5px black;
+        }
+
+        .user-sen{
+            text-align: center;
+            margin-bottom: 30px;
             
         }
 
-        .sub{
+        #user{
+            padding: 10px;
             border: none;
-            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.712);
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px black;
+            margin-bottom: 10px;
         }
 
-        .sub:hover{
-            color: #d2ae6d;
-            text-decoration: underline;
+        #sen{
+            padding: 10px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.712);
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        #submit{
+            display: flex;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            box-shadow: 0px 0px 5px black;
+            width: 130px;
+            text-align: center;
+            align-items: center;
+            
+        }
+
+        #submit:hover{
+            background-color: rgba(8, 8, 8, 0.74);
+            transition: all 0.5s ease;
+            padding: 15px;
         }
     </style>
 </head>
@@ -55,12 +87,12 @@
         <h1>Login</h1>
         <div class="login2">
             <form action="pagi.html" method="post">
-                <div class="user">
+                <div class="user-sen">
                     <p>
-                        <input type="text" id="user" placeholder="usuario">
+                        <input type="text" id="user" placeholder="usuario" size="12">
                     </p>
                     <p>
-                        <input type="password" id="sen" placeholder="senha">
+                        <input type="password" id="sen" placeholder="senha" size="12">
                     </p>
                 </div>
                 <p>
