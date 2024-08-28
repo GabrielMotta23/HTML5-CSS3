@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url('../folhas-de-palmeira-tropical-padrao-de-fundo-projeto-de-decoracao-de-folhagem-de-arvore-monstera-verde-planta-com-folha-exotica-fechada.jpg') no-repeat;
+    background-size: cover;
+}
+
+div.container{
+    background-color: aliceblue;
+    display: flex;
+    height: 560px;
+    width: 580px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px black;
+    min-width: 240px;
+    max-width: 580px;
+}
+
+div.planta{
+    background: url('../folhas-de-palmeira-tropical-padrao-de-fundo-projeto-de-decoracao-de-folhagem-de-arvore-monstera-verde-planta-com-folha-exotica-fechada.jpg') center;
+    width: 200px;
+    height: 560px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+div.formulario{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+div.formulario h1{
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+div .formulario form .first-name{
+    border: none;
+    border-bottom: solid 1px rgba(141, 141, 141, 0.356);
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+div .formulario form .last-name{
+    border: none;
+    border-bottom: solid 1px rgba(141, 141, 141, 0.356);
+    background-color: aliceblue;
+    padding: 10px;
+    margin-top: 35px;
+}
+
+div .formulario form .email, .message{
+    display: block;
+}
+
+div .formulario form .email{
+    border: none;
+    border-bottom: solid 1px rgba(141, 141, 141, 0.356);
+    background-color: aliceblue;
+    padding: 10px;
+    margin-top: 35px;
+}
+
+div .formulario form .message{
+    border: none;
+    border-bottom: solid 1px rgba(141, 141, 141, 0.356);
+    background-color: aliceblue;
+    padding: 10px;
+    padding-bottom: 60px;
+    margin-top: 35px;
+    
+}
+
+div .formulario form .enviar{
+    width: 300px;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 50px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.568);
+    border: solid 2px transparent;
+}
+
+div .formulario form .enviar:hover{
+    background: transparent;
+    border: solid black 2px;
+    color: black;
+    transition: all .5s ease-in-out;
+}
+
+div.planta:hover{
+    filter: grayscale();
+    transition: all 0.5s ease-in-out;
+}
+
+
