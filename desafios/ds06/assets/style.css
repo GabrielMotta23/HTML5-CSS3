@@ -1,0 +1,126 @@
+:root{
+    --pricipalcolor: #1DB954;
+    --secundariacolor: #FFFFFF;
+    --3color: #191414;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333333;
+}
+
+div.container{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #191414;
+    min-width: 200px;
+    max-width: 500px;
+    font-family: 'rubik';
+    padding: 40px 80px 40px 80px;
+    border-radius: 10px;
+    min-height: 300px;
+    max-height: 400px;
+    box-shadow: 0px 0px 14px black;
+}
+
+div.spotify-logo{
+    width: 50px;
+    height: 50px;
+    filter: invert();
+    background: url('../img/spotify.png') center;
+    background-size: cover;
+    margin: auto;
+}
+
+div.sing-in-sing-up{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+div.sing-in-sing-up p{
+    font-size: 14px;
+    border-bottom: #333333 solid 2px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+div.login input{
+    display: block;
+    outline: none;
+}
+
+input.user{
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+input.termos{
+    background-color: #1DB954;
+}
+
+span{
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+span p{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+span input{
+    cursor: pointer;
+}
+
+input.enviar{
+    width: 210px;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--pricipalcolor);
+    color: var(--secundariacolor);
+    box-shadow: 0px 8px 10px black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+p.esqueceu-sen{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(80, 80, 80);
+}
+
+div.sing-in-sing-up p:hover{
+    border-color: #1DB954;
+    transition: all 0.5s ease;
+}
+
+input.enviar:hover{
+    background-color: var(--secundariacolor);
+    color: black;
+    transition: all 0.5s ease;
+}
+
+p.esqueceu-sen:hover{
+    color: #FFFFFF;                            
+}
+
+
+
