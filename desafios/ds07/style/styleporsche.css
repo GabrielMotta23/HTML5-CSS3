@@ -16,7 +16,8 @@
 }
 
 header.container-loading-page{
-    background-color: black;
+    background: url('../img/porsche_911_carrera_4s_2019_4k_8-2560x1440.jpg') no-repeat center;
+    background-size: cover;
     width: 100%;
     height: 100vh;
 }
@@ -26,6 +27,8 @@ nav.navbar{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    padding-top: 30px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8981967787114846) 3%, rgba(9,9,121,0) 70%, rgba(0,212,255,0) 100%);
 }
 
 div.invi{
@@ -70,6 +73,10 @@ div.logo a{
     font-weight: 100;
 }
 
+abbr{
+    text-decoration: none;
+}
+
 div.menu:hover{
     background-color: rgba(114, 114, 114, 0.486);
     padding: 2px;
@@ -77,4 +84,76 @@ div.menu:hover{
     transition: 0.2s;
 }
 
+div.container{
+    margin-left: 100px;
+    margin-top: 60px;
+    color: white;
+}
+
+div.container h1{
+    font-family: var(--font);
+    font-size: 90px;
+    font-weight: 400;
+}
+
+div.container-link{
+    margin-top: 50px;
+}
+
+div.container a{
+    border: solid 2px white;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+    font-family: var(--font);
+}
+
+div.container-link a:hover{
+    background-color: rgba(169, 169, 169, 0.144);
+    filter: blur(5);
+    border: solid  rgba(169, 169, 169, 0.479) 2px;
+    transition: 0.2s;
+}
+
+main.container-info{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.info1, .info2, .info3{
+    width: 250px;
+    height: 200px;
+    background-color: blueviolet;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+main.container-info p{
+    position: relative;
+    top: 80%;
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: var(--font);
+}
+
+div.info1{
+    background: url('../img/taycan.jpg') center no-repeat;
+}
+
+div.info2{
+    background: url('../img/PSMP.jpg') center no-repeat;
+    background-size: cover;
+}
+
+div.info3{
+    background: url('../img/porsche_cayenne_turbo_61.jpeg') center no-repeat;
+    background-size: cover;
+}
 
