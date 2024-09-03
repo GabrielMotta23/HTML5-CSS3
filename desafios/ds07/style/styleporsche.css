@@ -157,3 +157,42 @@ div.info3{
     background-size: cover;
 }
 
+main.modelos{
+    width: 100%;
+    margin-top: 40px;
+}
+
+div.modelos-car{
+    display: flex;
+    justify-content: center;
+}
+
+span.porsche-car{
+    background-color: black;
+    color: white;
+    min-width: 276px;
+    max-width: 740px;
+    min-height: 490px;
+    max-height: 975px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+span.porsche-car p{
+    width: 270px;
+    padding-top: 270px;
+}
+
+span.porsche-car a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+    border: solid white 2px;
+    text-decoration: none;
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;
+}
