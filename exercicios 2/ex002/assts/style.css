@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav button {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: #ddd;
+}
+
+.menu {
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+}
+
+.menu.hidden {
+    display: none;
+}
+
+.menu:not(.hidden) {
+    display: block;
+}
+
+#entradas {
+    background-color: #f8f8f8;
+}
+
+#principais {
+    background-color: #e0e0e0;
+}
+
+#sobremesas {
+    background-color: #c8c8c8;
+}

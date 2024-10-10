@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="assts/style.css">
+</head>
+<body>
+
+    <!-- Botões para selecionar a parte do cardápio -->
+    <nav>
+        <button onclick="showSection('entradas')">Entradas</button>
+        <button onclick="showSection('principais')">Pratos Principais</button>
+        <button onclick="showSection('sobremesas')">Sobremesas</button>
+    </nav>
+
+    <!-- Seções do cardápio -->
+    <div class="menu-sections">
+        <section id="entradas" class="menu hidden">
+            <h2>Entradas</h2>
+            <p>Aqui estão as opções de entradas.</p>
+        </section>
+
+        <section id="principais" class="menu hidden">
+            <h2>Pratos Principais</h2>
+            <p>Aqui estão as opções de pratos principais.</p>
+        </section>
+
+        <section id="sobremesas" class="menu hidden">
+            <h2>Sobremesas</h2>
+            <p>Aqui estão as opções de sobremesas.</p>
+        </section>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Esconde todas as seções
+            let sections = document.querySelectorAll('.menu');
+            sections.forEach(function(section) {
+                section.classList.add('hidden');
+            });
+
+            // Mostra a seção selecionada
+            let selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
