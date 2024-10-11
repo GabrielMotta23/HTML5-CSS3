@@ -22,6 +22,23 @@
     font-family: var(--fontpricipal);
 }
 
+.box-logo{
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    width: 60px;
+    border-radius: 50%;
+}
+
 #name{
     font-weight: 700;
     text-transform: uppercase;
@@ -43,7 +60,7 @@ header{
 #navbar img{
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 50%;
     transition: 0.5s;
 }
 
@@ -59,30 +76,35 @@ header{
 
 #cardapio{
     background-color: var(--corprincipal2);
-    height: 100vh;
 }
+
+/* Cardapio pastel */
 
 #pastel-cardapio{
     display: none;
     transition: 0.5s;
+    height: 180vh;
+    background-color: var(--corprincipal2);
 }
 
 .pastel{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     padding: 10px;
+    justify-content: center;
 }
 
 .pastel-items{
     display: flex;
     align-items: center;
-    background-color: white;
+    border: solid var(--cors1) 2px;
     width: 350px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
     margin: auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.281);
+    background-color: white;
 }
 
 .pastel-items img{
@@ -98,22 +120,434 @@ header{
     font-weight: 500;
 }
 
+.driscricion-pastel h2{
+    background-color: var(--cors4);
+    width: 120px;
+    text-align: center;
+    border-radius: 5px 20px;
+    padding: 5px;
+    color: white;
+}
+
 .driscricion-pastel i{
     font-style: normal;
     font-size: 20px;
 }
 
+.box-sabores-pastel{
+    margin-top: 50px;
+}
+
 .pastel-sabores{
-    margin: auto;
+    margin-top: 50px;
     background-color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.281);
     border-radius: 10px;
     padding: 20px;
     width: 400px;
     text-align: justify;
+    margin: auto;
 }
 
 #pastel-cardapio:target{
     display: block;
 }
 
+/* Cardapio burguer */
+
+#burguer-cardapio{
+    background-color: white;
+    display: none;
+    height: 100vh;
+}
+
+.burguer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.burguer-items{
+    text-align: center;
+    width: 20em;
+    height: 18em;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    align-content: space-between;
+}
+
+.burguer-items img{
+    width: 100px;
+}
+
+.burguer-items p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.burguer-items h2{
+    margin-top: 10px;
+    background-color: var(--cors4);
+    color: white;
+    padding: 10px;
+    border-radius: 5px 20px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.692);
+}
+
+.burguer-items h1{
+    font-weight: 600;
+}
+
+#burguer-cardapio:target{
+    display: block;
+}
+
+/* cardapio salgados */
+
+#salgados-cardapio{
+    height: 110vh;
+    background-color: var(--corprincipal2);
+    display: none;
+}
+
+.salgados{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    padding: 30px;
+}
+
+.salgados-items{
+    display: flex;
+    align-items: center;
+    border: solid var(--cors1) 2px;
+    width: 350px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.salgados-items img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.info-salgados{
+    margin-left: 20px;
+}
+
+.info-salgados h2{
+    background-color: var(--cors4);
+    width: 120px;
+    text-align: center;
+    border-radius: 5px 20px;
+    padding: 5px;
+    color: white;
+}
+
+#salgados-cardapio:target{
+    display: block;
+}
+
+/* cardapio doce */
+
+#doce-cardapio{
+    height: 80vh;
+    background-color: var(--corprincipal2);
+    display: none;
+}
+
+.doce{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    padding: 30px;
+}
+
+.doce-items{
+    display: flex;
+    align-items: center;
+    border: solid var(--cors1) 2px;
+    width: 350px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.doce-items img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.info-doce{
+    margin-left: 20px;
+}
+
+.info-doce h2{
+    background-color: var(--cors4);
+    width: 120px;
+    text-align: center;
+    border-radius: 5px 20px;
+    padding: 5px;
+    color: white;
+}
+
+#doce-cardapio:target{
+    display: block;
+}
+
+/* bebida cardapio */
+
+#bebidas-cardapio{
+    height: 260vh;
+    background-color: var(--corprincipal2);
+    display: none;
+}
+
+.bebidas{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    padding: 30px;
+}
+
+.bebidas-items{
+    display: flex;
+    align-items: center;
+    border: solid var(--cors1) 2px;
+    width: 350px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.bebidas-items img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.info-bebidas{
+    margin-left: 20px;
+}
+
+.info-bebidas h2{
+    background-color: var(--cors4);
+    width: 120px;
+    text-align: center;
+    border-radius: 5px 20px;
+    padding: 5px;
+    color: white;
+}
+
+#bebidas-cardapio:target{
+    display: block;
+}
+
+/* resposivo */
+
+@media (max-width: 500px){
+    #navbar img{
+        width: 20px;
+        padding: 8px;
+        border-radius: 50%;
+    }
+
+    #navbar p{
+        font-size: 10px;
+    }
+
+    #navbar{
+        display: flex;
+    }
+
+    .pastel{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .driscricion-pastel{
+        font-size: 12px;
+    }
+
+    .pastel-items{
+        display: flex;
+        align-items: center;
+        border: solid var(--cors1) 2px;
+        width: 300px;
+        height: 140px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .pastel-sabores{
+        width: 200px;
+    }
+
+    .salgados-items{
+        display: flex;
+        align-items: center;
+        border: solid var(--cors1) 2px;
+        width: 300px;
+        height: 140px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .info-salgados{
+        font-size: 12px;
+    }
+
+    .salgados{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .doce-items{
+        display: flex;
+        align-items: center;
+        border: solid var(--cors1) 2px;
+        width: 300px;
+        height: 140px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .info-doces{
+        font-size: 12px;
+    }
+
+    .doce{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .bebidas-items{
+        display: flex;
+        align-items: center;
+        border: solid var(--cors1) 2px;
+        width: 300px;
+        height: 140px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .bebidas{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .info-bebidas{
+        font-size: 12px;
+    }
+
+    .burguer{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5px;
+    }
+
+    .burguer-items{
+        width: 200px;
+    }
+}
+
+@media (max-width: 800px){
+    .burguer{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5px;
+    }
+
+    .burguer-items{
+        width: 200px;
+    }
+
+    .logo h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px){
+    .logo{
+        display: block;
+        text-align: center;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .pastel-items{
+        display: flex;
+        align-items: center;
+        border: solid var(--cors1) 2px;
+        width: 260px;
+        height: 140px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .salgados-items{
+        display: flex;
+        align-items: center;
+        border: solid var(--cors1) 2px;
+        width: 260px;
+        height: 140px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .doce-items{
+        display: flex;
+        align-items: center;
+        border: solid var(--cors1) 2px;
+        width: 260px;
+        height: 140px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .bebidas-items{
+        display: flex;
+        align-items: center;
+        border: solid var(--cors1) 2px;
+        width: 260px;
+        height: 140px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
