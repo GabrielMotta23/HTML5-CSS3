@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calendar {
+    margin: auto;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.month {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#days div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    color: #333;
+    border-radius: 5px;
+}
+
+#days div:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#days div:nth-child(7n+1) {
+    color: #e74c3c; /* Domingo em vermelho */
+}
+
+#inputs{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+#inputs input{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+
+#days div.selected {
+    background-color: #4CAF50;
+    color: white;
+}
