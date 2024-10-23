@@ -1,79 +1,129 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0e0e0e;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    display: flex;
 }
 
-#calendar {
+.container {
     margin: auto;
-    width: 300px;
-    background-color: #fff;
+    width: 350px;
+    height: 80vh;
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.controle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
     padding: 20px;
+    border-radius: 10px;
 }
 
-.month {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.weekdays {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-#days {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#days div {
-    width: 14.28%;
-    text-align: center;
-    padding: 10px 0;
-    margin-bottom: 5px;
-    color: #333;
+.controle button {
+    color: black;
+    font-weight: bolder;
+    border: none;
+    padding: 10px 20px;
     border-radius: 5px;
-}
-
-#days div:hover {
-    background-color: #ddd;
     cursor: pointer;
 }
 
-#days div:nth-child(7n+1) {
-    color: #e74c3c; /* Domingo em vermelho */
+.controle h2 {
+    margin: 0;
 }
 
-#inputs{
-    display: block;
+
+.controle button:hover {
+    background-color: #aaaaaa;
+    box-shadow: 0px 0px 50px 10px #ffffff;
+}
+
+.dias-semana div {
+    padding: 10px 0;
+}
+
+.dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     text-align: center;
-    padding: 20px;
+    font-weight: bold;
+    color: #333;
 }
 
-#inputs input{
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    border-radius: 5px;
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.dias div.vazio {
+    background-color: transparent;
     border: none;
 }
 
-#days div.selected {
-    background-color: #4CAF50;
-    color: white;
+.dias div {
+    padding: 15px 0;
+    margin: 5px;
+    border-radius: 5px;
+    color: #333;
 }
+
+
+.dias div.intervalo {
+    background-color: #DCD0FF;
+    color: black;
+    font-weight: bold;
+}
+.dias div.selecionado {
+    background-color: #A020F0;
+    color: white;
+    font-weight: bold;
+}
+
+
+.input-data {
+    background-color: #ffffff;
+    width: 350px;
+    height: 30vh;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+label{
+    font-weight: 700;
+    font-family: "Poppins", serif;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: solid black 1px;
+    font-family: "Poppins", serif;
+    width: 300px;
+    text-align: center;
+}
+
+.resultado {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Poppins", serif;
+}
+
