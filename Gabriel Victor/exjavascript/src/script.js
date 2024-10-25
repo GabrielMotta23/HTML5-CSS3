@@ -59,7 +59,7 @@ function marcarDia1(dia) {
 }
 
 mesAnteriorBtn.addEventListener("click", () => {
-    dataAtual.setMonth(dataAtual.getMonth() + 1);
+    dataAtual.setMonth(dataAtual.getMonth() - 1);
     gerarCalendario(dataAtual.getMonth(), dataAtual.getFullYear());
 });
 
